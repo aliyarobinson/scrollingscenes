@@ -90,18 +90,18 @@ ul {
   overflow: hidden;
 }
 
-.site-nav ul .scene-item button {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-weight: 400;
-  font-style: normal;
-  font: 12px/14px Tahoma,Arial,sans-serif;
-  color: #fff;
-  text-decoration: none;
+.site-nav ul .scene-item a{
+  	color: #bdbdbd;
+    text-decoration: none;
+    background: #6f6f6f;
+    padding: 10px 30px 10px 10px;
+    display: inline-block;
+    transition: 500ms;
 }
 
-.site-nav ul .scene-item button.active {
-  color: #e34545;
+.site-nav ul .scene-item a.active,
+.site-nav ul .scene-item a:hover {
+    padding: 10px 50px 10px 10px;
 }
 
 .site-nav ul .scene-item button:hover {
@@ -187,7 +187,7 @@ ul {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 
     opacity: 0;
-    right: 0;
+    right: -10px;
     position: absolute;
     text-align: right;
 }
