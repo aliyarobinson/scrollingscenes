@@ -24,7 +24,7 @@ body {
   padding: 0;
   color: #fff;
   position: static;
-  font: 14px arial, sans-serif;
+  font: 14px voltaireregular, arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -45,6 +45,7 @@ p {
   margin: 0 0 10px;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: 0.4px;
 }
 
 ul {
@@ -74,9 +75,9 @@ ul {
 
 .site-header {
 	position: fixed;
-    top: 0;
+    top: 50%;
     left: 0;
-    margin: 20px;
+    margin: -103px 20px 0;
     z-index: 2;
 }
 
@@ -179,15 +180,16 @@ ul {
     top: 0;
     width: 50%;
     height: 100%;
-    /*background: rgba(0,0,0,0.9);*/
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
-	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+    
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.87+56,1+98 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.87) 56%, rgba(0,0,0,1) 98%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.87) 56%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.87) 56%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 
     opacity: 0;
-    right: -10px;
+    right: -100px;
     position: absolute;
     text-align: right;
 }
@@ -198,8 +200,16 @@ ul {
   position: relative;
 }
 
+.overlayContent .content-copy {
+  margin: 0 100px 0 0;
+  clear: both;
+  font: 18px voltaireregular, arial, sans-serif;
+}
+
 .overlayContent .img-block {
   margin: 0 20px;
+  float: right;
+  margin: 0 100px 20px 0;
 }
 
 .overlayContent .img-block {
@@ -208,13 +218,14 @@ ul {
 }
 
 .overlayContent .title {
-  font: 24px voltaireregular,arial,sans-serif;
+  font: 34px voltaireregular,arial,sans-serif;
   width: 500px;
   text-align: center;
   margin: 20px auto;
-  background: rgba(0,0,0,0.4);
-  border: 1px #4e4949 solid;
+  border: 31px #4e4949 solid;
+  border-style: solid none;
   padding: 5px;
+  margin: 20px 160px 20px 0;
 }
 
 .overlayContent .rtSide {
@@ -243,6 +254,13 @@ p.infoItem {
   padding: 2px 0;
   margin: 0;
   color: #666;
+}
+
+.firstHeading {
+    color: gray;
+    font-size: 20px;
+    margin: 10px auto;
+    background: transparent;
 }
 
 .sceneInfo {

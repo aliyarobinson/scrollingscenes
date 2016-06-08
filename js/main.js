@@ -11,7 +11,6 @@
         }, 1000);
 	}
 
-	// window.onhashchange = window.onpopstate = function(){
 	window.onpopstate = function(){
 		console.log('hash pop');
 		var thisScene = document.location.hash;
@@ -32,14 +31,12 @@
 			e.preventDefault();
 			console.log('clicked real nav');
 
-			// trigger scroll
-			// scrollMagicController.scrollToElem(id);
 			scrollToElem(id);
 
-				// if supported by the browser we can even update the URL.
-			if (window.history && window.history.pushState) {
-				history.pushState("", document.title, id);
-			}
+			// if supported by the browser we can even update the URL.
+			// if (window.history && window.history.pushState) {
+			// 	history.pushState("", document.title, id);
+			// }
 		}
 	});
 
@@ -48,17 +45,17 @@
 	    right: 0
 	});
 
-	var tween2 = TweenMax.to('.scene2 .overlayContent', 0.5, {
+	var tween2 = TweenMax.to('.scene2 .overlayContent', 0.8, {
 	    opacity: 1,
 	    right: 0
 	});
 
-	var tween3 = TweenMax.to('.scene3 .overlayContent', 0.5, {
+	var tween3 = TweenMax.to('.scene3 .overlayContent', 0.8, {
 	    opacity: 1,
 	    right: 0
 	});
 
-	var tween4 = TweenMax.to('.scene4 .overlayContent', 0.5, {
+	var tween4 = TweenMax.to('.scene4 .overlayContent', 0.8, {
 	    opacity: 1,
 	    right: 0
 	});
@@ -70,8 +67,8 @@
 	.setTween(tween)
 	.addTo(scrollMagicController);
 
-		// Add debug indicators fixed on right side
-		// scene.addIndicators();
+	// Add debug indicators fixed on right side
+	// scene.addIndicators();
 
 	var scene2 = new ScrollMagic.Scene({
 	    triggerElement: '.scene2',
@@ -80,27 +77,27 @@
 	.setTween(tween2)
 	.addTo(scrollMagicController);
 
-		// Add debug indicators fixed on right side
-		// scene2.addIndicators();
+	// Add debug indicators fixed on right side
+	// scene2.addIndicators();
 
-		var scene3 = new ScrollMagic.Scene({
+	var scene3 = new ScrollMagic.Scene({
 	    triggerElement: '.scene3',
 	    duration: 300 /* How many pixels to scroll / animate */
 	})
 	.setTween(tween3)
 	.addTo(scrollMagicController);
 
-		// Add debug indicators fixed on right side
-		// scene3.addIndicators();
+	// Add debug indicators fixed on right side
+	// scene3.addIndicators();
 		
-		var scene4 = new ScrollMagic.Scene({
+	var scene4 = new ScrollMagic.Scene({
 	    triggerElement: '.scene4',
 	    duration: 300 /* How many pixels to scroll / animate */
 	})
 	.setTween(tween4)
 	.addTo(scrollMagicController);
 
-		// Add debug indicators fixed on right side
-		// scene4.addIndicators();
+	// Add debug indicators fixed on right side
+	// scene4.addIndicators();
 
 })(jQuery);
