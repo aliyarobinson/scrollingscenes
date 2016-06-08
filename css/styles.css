@@ -1,0 +1,318 @@
+/*******************************
+	Project: Scenes From the City Scrolling Site
+	Author: Aliya Y. Robinson
+	Author URI: http://aliyayrobinson.com
+	Original Date Completed: 06/08/2016
+***********************************************/
+
+
+
+
+/*******************************
+	General Styles
+***********************************************/
+
+html {
+  height: 100; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  position: static;
+  font: 14px arial, sans-serif;
+  overflow-x: hidden;
+}
+
+html,body,p,h1,h2,h3,h4,div {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+    background: transparent;
+    border: 1px #666 solid;
+    padding: 2px;
+    color: #918989;
+    cursor: pointer;
+}
+
+p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+ul {
+  list-style: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+/* Custom Font Voltaire----------- */
+@font-face {
+  font-family: 'voltaireregular';
+  src: url(../fonts/voltaire/voltaire-regular-webfont.eot);
+  src: url(../fonts/voltaire/voltaire-regular-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/voltaire/voltaire-regular-webfont.woff) format("woff"),url(../fonts/voltaire/voltaire-regular-webfont.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Custom Font Voltaire End----------- */
+
+
+
+.site-header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 2;
+}
+
+/*******************************
+	Site Navigation Styles
+***********************************************/
+
+.site-nav ul li {
+  padding: 0 0 5px;
+  height: auto;
+  overflow: hidden;
+}
+
+.site-nav ul .scene-item button {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-style: normal;
+  font: 12px/14px Tahoma,Arial,sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-nav ul .scene-item button.active {
+  color: #e34545;
+}
+
+.site-nav ul .scene-item button:hover {
+  color: #ad5d58;
+}
+
+
+/*******************************
+	Main Container Styles
+***********************************************/
+.mainContainer {
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  background: url(../images/scene-img-1.png) #1b1e24 top center no-repeat fixed;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.mainContainer .intro {
+  background: rgba(51,53,56,0.6);
+  width: 520px;
+  max-width: 520px;
+  min-width: 500px;
+  height: auto;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 100px auto 0;
+  padding: 50px 50px 20px;
+}
+
+.mainContainer .scene {
+  background: url(../images/scene-img-2.png) rgba(27,30,36,0.8) top center no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+}
+
+.mainContainer .scene.scene1 {
+  background-image: url(../images/scene-img-1.png);
+}
+
+.mainContainer .scene.scene2 {
+  background-image: url(../images/scene-img-2.png);
+}
+
+.mainContainer .scene.scene3 {
+  background-image: url(../images/scene-img-3.png);
+}
+
+.mainContainer .scene.scene4 {
+  background-image: url(../images/scene-img-4.png);
+}
+
+.siteTitle {
+  font: 115px voltaireregular,arial,sans-serif;
+  text-transform: uppercase;
+}
+
+.siteSubtitle {
+  font: italic 20px Georgia,serif;
+  color: #e34545;
+}
+
+
+/*******************************
+	Scene Overlay Content Styles
+***********************************************/
+.overlayContent {
+    font: 14px/14px Tahoma,Arial,sans-serif;
+    display: none;
+    z-index: 50;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    /*background: rgba(0,0,0,0.9);*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
+    opacity: 0;
+    right: 0;
+    position: absolute;
+    text-align: right;
+}
+
+.overlayContent .container {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.overlayContent .img-block {
+  margin: 0 20px;
+}
+
+.overlayContent .img-block {
+	width: 100%;
+	max-width: 300px;
+}
+
+.overlayContent .title {
+  font: 24px voltaireregular,arial,sans-serif;
+  width: 500px;
+  text-align: center;
+  margin: 20px auto;
+  background: rgba(0,0,0,0.4);
+  border: 1px #4e4949 solid;
+  padding: 5px;
+}
+
+.overlayContent .rtSide {
+  width: 400px;
+}
+
+.overlayContent .bottom {
+  margin: 20px;
+  text-align: right;
+}
+
+
+
+
+
+#map_canvas {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+p.infoItem {
+  font: 14px Arial,Helvetica,sans-serif;
+  padding: 2px 0;
+  margin: 0;
+  color: #666;
+}
+
+.sceneInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+  @mediaonlyscreenandmin-device-width: 320px) and (max-device-width : 480px){;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .mainContainer .intro {
+    width: 170px;
+    max-width: 300px;
+    min-width: 100px;
+    padding-top: 20px;
+    margin-top: 60px;
+  }
+
+  .siteTitle {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (min-width : 321px) and (max-width: 767px) {
+
+  .mainContainer .intro {
+    width: 300px;
+    max-width: 750px;
+    min-width: 300px;
+  }
+
+  .siteTitle {
+    font-size: 70px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media (min-width : 768px) and (max-width : 1024px) {
+  .mainContainer .intro {
+    width: 750px;
+    max-width: 1024px;
+    min-width: 750px;
+    padding: 50px 0 20px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),only screen and (min-device-pixel-ratio : 1.5) {

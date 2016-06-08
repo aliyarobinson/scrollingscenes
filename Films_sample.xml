@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Edited by XMLSpy® -->
+<Films> 
+
+<Film>
+    <Cell>A Thousand Clowns</Cell>
+    <Cell>1965</Cell>
+    <Cell>A%20Thousand%20Clowns</Cell>
+    <Cell>AThousandClowns_pf</Cell>
+    <Cell>Courtesy of Photofest</Cell>
+    <Cell>Directed by</Cell>
+    <Cell>Fred Coe</Cell>
+    <Cell>http://imdb.com/name/nm0168641/</Cell>
+    <Cell>Statue of Liberty Liberty Island New York Harbor</Cell>
+    <Cell>40.689587313438302</Cell>
+    <Cell>-74.043796062469397</Cell>
+    <Cell>Manhattan</Cell>
+    <Cell>New York Harbor</Cell>
+    <Cell>N/A</Cell>
+    <Cell>Film</Cell>
+    <Cell>http://www.imdb.com/title/tt0059798/</Cell>
+    <Cell>Statue of Liberty, Liberty Island, New York Harbor</Cell>
+    <Cell>poor quality</Cell>
+    <Cell>Y</Cell>
+    <Cell>51</Cell>
+    <Cell> </Cell>
+    <Cell>Y</Cell>
+</Film>
+
+<Film>
+    <Cell>Barefoot in the Park</Cell>
+    <Cell>1967</Cell>
+    <Cell>Barefoot%20in%20the%20Park</Cell>
+    <Cell>BarefootinthePark2_pf</Cell>
+    <Cell>Courtesy of Photofest</Cell>
+    <Cell>Directed by</Cell>
+    <Cell>Gene Saks</Cell>
+    <Cell>http://imdb.com/name/nm0757256/</Cell>
+    <Cell>Washington Square Park West Village Manhattan</Cell>
+    <Cell>40.730722299943601</Cell>
+    <Cell>-73.996514081954899</Cell>
+    <Cell>Manhattan</Cell>
+    <Cell>West Village</Cell>
+    <Cell>N/A</Cell>
+    <Cell>Film</Cell>
+    <Cell>http://www.imdb.com/title/tt0061385/</Cell>
+    <Cell>Washington Square Park</Cell>
+    <Cell>poor quality</Cell>
+    <Cell>Y</Cell>
+    <Cell>74-75</Cell>
+    <Cell> </Cell>
+    <Cell>Y</Cell>
+   </Film>
+
+      <Film>
+
+    <Cell>Breakfast at Tiffany's
+      </Cell>
+    <Cell>1961
+      </Cell>
+    <Cell>Breakfast%20at%20Tiffany%27s
+      </Cell>
+    <Cell>BreakfastatTiffanys3_ec
+      </Cell>
+    <Cell>Courtesy of Everett Collection, Inc.
+      </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>Blake Edwards
+      </Cell>
+    <Cell>http://imdb.com/name/nm0001175/
+      </Cell>
+    <Cell>Tiffany &amp; Co. at 727 Fifth Ave. Midtown Manhattan
+      </Cell>
+    <Cell>40.762509999999999
+      </Cell>
+    <Cell>-73.974142000000001
+      </Cell>
+    <Cell>Manhattan
+      </Cell>
+    <Cell>Midtown
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://www.imdb.com/title/tt0054698/
+      </Cell>
+    <Cell>Tiffany &amp; Co. - 727 Fifth Avenue at 57th Street
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>49
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+   </Film>
+
+
+
+
+
+
+
+   <Film>
+    <Cell>An Unmarried Woman</Cell>
+    <Cell>1978</Cell>
+    <Cell>An%20Unmarried%20Woman</Cell>
+    <Cell> </Cell>
+    <Cell> </Cell>
+    <Cell>Directed by</Cell>
+    <Cell>Paul Mazursky</Cell>
+    <Cell>http://imdb.com/name/nm0005196/</Cell>
+    <Cell>Mercer St. between Spring and Broome SoHo Manhattan</Cell>
+    <Cell>40.722559132292403</Cell>
+    <Cell>-74.000290632247896</Cell>
+    <Cell>Manhattan</Cell>
+    <Cell>SoHo</Cell>
+    <Cell>N/A</Cell>
+    <Cell>Film</Cell>
+    <Cell>http://www.imdb.com/title/tt0078444/</Cell>
+    <Cell>SoHo</Cell>
+    <Cell> </Cell>
+    <Cell>Y</Cell>
+    <Cell>152-153</Cell>
+    <Cell>N</Cell>
+    <Cell>N</Cell>
+   </Film>
+
+   <Film>
+    <Cell>Annie Hall</Cell>
+    <Cell>1977</Cell>
+    <Cell>Annie%20Hall</Cell>
+    <Cell>AnnieHall2_pf</Cell>
+    <Cell>Courtesy of Photofest</Cell>
+    <Cell>Directed by</Cell>
+    <Cell>Woody Allen</Cell>
+    <Cell>http://www.imdb.com/name/nm0000095/</Cell>
+    <Cell>Coney Island Brooklyn</Cell>
+    <Cell>40.5736092162742</Cell>
+    <Cell>-73.975968360900794</Cell>
+    <Cell>Brooklyn</Cell>
+    <Cell>Brooklyn</Cell>
+    <Cell>N/A</Cell>
+    <Cell>Film</Cell>
+    <Cell>http://www.imdb.com/title/tt0075686/</Cell>
+    <Cell>Coney Island boardwalk</Cell>
+    <Cell> </Cell>
+    <Cell>Y</Cell>
+    <Cell>136</Cell>
+    <Cell> </Cell>
+    <Cell>N</Cell>
+   </Film>
+
+
+   <Film>
+    <Cell>Cotton Comes to Harlem
+      </Cell>
+    <Cell>1970
+      </Cell>
+    <Cell>Cotton%20Comes%20to%20Harlem
+      </Cell>
+    <Cell> </Cell>
+    <Cell> </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>Ossie Davis
+      </Cell>
+    <Cell>http://imdb.com/name/nm0001115/
+      </Cell>
+    <Cell>Harlem
+      </Cell>
+    <Cell>40.806500840701901
+      </Cell>
+    <Cell>-73.939286470413194
+      </Cell>
+    <Cell>Manhattan
+      </Cell>
+    <Cell>Harlem
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://imdb.com/title/tt0065579/
+      </Cell>
+    <Cell>Harlem
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>100
+      </Cell>
+    <Cell>N
+      </Cell>
+    <Cell>N
+      </Cell>
+   </Film>
+
+
+   <Film>
+    <Cell>Death Wish
+      </Cell>
+    <Cell>1974
+      </Cell>
+    <Cell>Death%20Wish
+      </Cell>
+    <Cell>DeathWish_pf
+      </Cell>
+    <Cell>Courtesy of Photofest
+      </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>Michael Winner
+      </Cell>
+    <Cell>http://imdb.com/name/nm0935382/
+      </Cell>
+    <Cell>Subway Station near Court St. Brooklyn
+      </Cell>
+    <Cell>40.693800000000003
+      </Cell>
+    <Cell>-73.990399999999994
+      </Cell>
+    <Cell>Brooklyn
+      </Cell>
+    <Cell>Brooklyn
+      </Cell>
+    <Cell>The Subway
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://www.imdb.com/title/tt0071402/
+      </Cell>
+    <Cell>Subway near Court St.
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>67
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+   </Film>
+
+   <Film>
+    <Cell>Dog Day Afternoon
+      </Cell>
+    <Cell>1972
+      </Cell>
+    <Cell>Dog%20Day%20Afternoon
+      </Cell>
+    <Cell> </Cell>
+    <Cell> </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>Sidney Lumet
+      </Cell>
+    <Cell>http://imdb.com/name/nm0001486/
+      </Cell>
+    <Cell>Prospect Park South and 16th St. Brooklyn
+      </Cell>
+    <Cell>40.657250304653402
+      </Cell>
+    <Cell>-73.974219560623098
+      </Cell>
+    <Cell>Brooklyn
+      </Cell>
+    <Cell>Brooklyn
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://www.imdb.com/title/tt0072890/
+      </Cell>
+    <Cell>Park Slope
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>4,63
+      </Cell>
+    <Cell> </Cell>
+    <Cell>N
+      </Cell>
+   </Film>
+
+   <Film>
+    <Cell>Godspell
+      </Cell>
+    <Cell>1973
+      </Cell>
+    <Cell>Godspell
+      </Cell>
+    <Cell>Godspell3_pf
+      </Cell>
+    <Cell>Courtesy of Photofest
+      </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>David Greene
+      </Cell>
+    <Cell>http://imdb.com/name/nm0338719/
+      </Cell>
+    <Cell>World Trade Center Lower Manhattan
+      </Cell>
+    <Cell>40.712264308312399
+      </Cell>
+    <Cell>-74.011239409446702
+      </Cell>
+    <Cell>Manhattan
+      </Cell>
+    <Cell>Lower Manhattan
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://www.imdb.com/title/tt0070121/
+      </Cell>
+    <Cell>Roof of WTC
+      </Cell>
+    <Cell>poor quality
+      </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>72-73
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+   </Film>
+
+
+   <Film>
+    <Cell>Hair
+      </Cell>
+    <Cell>1979
+      </Cell>
+    <Cell>Hair
+      </Cell>
+    <Cell>Hair_pf
+      </Cell>
+    <Cell>Courtesy of Photofest
+      </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>Milos Forman
+      </Cell>
+    <Cell>http://imdb.com/name/nm0001232/
+      </Cell>
+    <Cell>Sheep's Meadow Central Park Manhattan
+      </Cell>
+    <Cell>40.771799372153502
+      </Cell>
+    <Cell>-73.974884748458805
+      </Cell>
+    <Cell>Manhattan
+      </Cell>
+    <Cell>Central Park
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://www.imdb.com/title/tt0079261/
+      </Cell>
+    <Cell>Central Park
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>145
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+   </Film>
+
+   <Film>
+    <Cell>King Kong
+      </Cell>
+    <Cell>1976
+      </Cell>
+    <Cell>King%20Kong
+      </Cell>
+    <Cell>KingKong_ec
+      </Cell>
+    <Cell>Courtesy of Everett Collection, Inc.
+      </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>John Guillermin
+      </Cell>
+    <Cell>http://imdb.com/name/nm0347086/
+      </Cell>
+    <Cell>World Trade Center Lower Manhattan
+      </Cell>
+    <Cell>40.712548941747798
+      </Cell>
+    <Cell>-74.014779925346303
+      </Cell>
+    <Cell>Manhattan
+      </Cell>
+    <Cell>Lower Manhattan
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://www.imdb.com/title/tt0074751/
+      </Cell>
+    <Cell>World Trade Center
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>90-91
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+   </Film>
+
+
+
+
+
+
+   <Film>
+    <Cell>*batteries not included</Cell>
+    <Cell>1987</Cell>
+    <Cell>%2Abatteries%20not%20included</Cell>
+    <Cell>batteriesnotincluded_pf</Cell>
+    <Cell>Courtesy of Photofest</Cell> 
+    <Cell>Directed by</Cell>
+    <Cell>Matthew Robbins</Cell>
+    <Cell>http://imdb.com/name/nm0730422/</Cell>
+    <Cell>E.5th St.East Village Manhattan</Cell>
+    <Cell>40.722445296182798</Cell>
+    <Cell>-73.9786505699157</Cell>
+    <Cell>Manhattan</Cell>
+    <Cell>East Village</Cell>
+    <Cell>N/A</Cell>
+    <Cell>Film</Cell>
+    <Cell>http://imdb.com/title/tt0092494/</Cell>
+    <Cell>N/A</Cell>
+    <Cell></Cell>
+    <Cell>Y</Cell>
+    <Cell>190</Cell>
+    <Cell></Cell>
+    <Cell>Y</Cell>
+   </Film>
+
+   <Film>
+    <Cell>After Hours</Cell>
+    <Cell>1985</Cell>
+    <Cell>After%20Hours</Cell>
+    <Cell> </Cell>
+    <Cell> </Cell>
+    <Cell>Directed by</Cell>
+    <Cell>Martin Scorsese</Cell>
+    <Cell>http://imdb.com/name/nm0000217/</Cell>
+    <Cell>Mercer and Grand SoHo Manhattan</Cell>
+    <Cell>40.721299999999999</Cell>
+    <Cell>-74.001499999999993</Cell>
+    <Cell>Manhattan</Cell>
+    <Cell>SoHo</Cell>
+    <Cell>N/A</Cell>
+    <Cell>Film</Cell>
+    <Cell>http://www.imdb.com/title/tt0088680/</Cell>
+    <Cell>SoHo</Cell>
+    <Cell> </Cell>
+    <Cell>Y</Cell>
+    <Cell>154</Cell>
+    <Cell>N</Cell>
+    <Cell>N</Cell>
+   </Film>
+
+   <Film>
+    <Cell>Arthur</Cell>
+    <Cell>1981</Cell>
+    <Cell>Arthur</Cell>
+    <Cell>Arthur_pf</Cell>
+    <Cell>Courtesy of Photofest</Cell>
+    <Cell>Directed by</Cell>
+    <Cell>Steve Gordon</Cell>
+    <Cell>http://imdb.com/name/nm0330619/</Cell>
+    <Cell>Bergdorf's at 754 Fifth Ave. Midtown Manhattan</Cell>
+    <Cell>40.763334</Cell>
+    <Cell>-73.973890999999995</Cell>
+    <Cell>Manhattan</Cell>
+    <Cell>Midtown</Cell>
+    <Cell>N/A</Cell>
+    <Cell>Film</Cell>
+    <Cell>http://www.imdb.com/title/tt0082031/</Cell>
+    <Cell>in front of Bergorf's, 5th Ave at 58th street</Cell>
+    <Cell> </Cell>
+    <Cell>N</Cell>
+    <Cell> </Cell>
+    <Cell> </Cell>
+    <Cell>Y</Cell>
+   </Film>
+
+   <Film>
+    <Cell>BIG
+      </Cell>
+    <Cell>1988
+      </Cell>
+    <Cell>BIG
+      </Cell>
+    <Cell>Big_pf
+      </Cell>
+    <Cell>Courtesy of Photofest
+      </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>Penny Marshall
+      </Cell>
+    <Cell>http://imdb.com/name/nm0001508/
+      </Cell>
+    <Cell>F.A.O. Schwarz at 767 Fifth Ave. Midtown Manhattan
+      </Cell>
+    <Cell>40.764052999999997
+      </Cell>
+    <Cell>-73.972977999999998
+      </Cell>
+    <Cell>Manhattan
+      </Cell>
+    <Cell>Midtown
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://www.imdb.com/title/tt0094737/
+      </Cell>
+    <Cell>F.A.O. Schwarz - 58th and Fifth Avenue
+      </Cell>
+    <Cell>poor quality
+      </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>162-163
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+   </Film>
+
+
+   <Film>
+    <Cell>Crocodile Dundee
+      </Cell>
+    <Cell>1986
+      </Cell>
+    <Cell>Crocodile%20Dundee
+      </Cell>
+    <Cell>CrocodileDundee3_pf
+      </Cell>
+    <Cell>Courtesy of Photofest
+      </Cell>
+    <Cell>Directed by
+      </Cell>
+    <Cell>Peter Faiman
+      </Cell>
+    <Cell>http://imdb.com/name/nm0265363/
+      </Cell>
+    <Cell>Fifth Ave. and 53rd St. Midtown Manhattan
+      </Cell>
+    <Cell>40.760399999999997
+      </Cell>
+    <Cell>-73.975800000000007
+      </Cell>
+    <Cell>Manhattan
+      </Cell>
+    <Cell>Midtown
+      </Cell>
+    <Cell>N/A
+      </Cell>
+    <Cell>Film
+      </Cell>
+    <Cell>http://imdb.com/title/tt0090555/
+      </Cell>
+    <Cell>Fifth Avenue
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+    <Cell>133
+      </Cell>
+    <Cell> </Cell>
+    <Cell>Y
+      </Cell>
+   </Film>
+</Films>
