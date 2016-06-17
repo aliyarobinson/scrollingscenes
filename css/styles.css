@@ -239,7 +239,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 
 
+.map .decades {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
 
+.decades li {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+.decades li:first-child {
+  margin: 0;
+}
 
 #map_canvas {
   height: 100%;

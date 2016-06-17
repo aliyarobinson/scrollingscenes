@@ -29,9 +29,9 @@
 		var id = $(this).attr("href");
 		if ($(id).length > 0) {
 			e.preventDefault();
-			console.log('clicked real nav');
-
-			scrollToElem(id);
+			console.log('clicked real nav - id: ', id);
+			scrollMagicController.scrollTo(id);
+			// scrollToElem(id);
 
 			// if supported by the browser we can even update the URL.
 			// if (window.history && window.history.pushState) {
@@ -62,6 +62,8 @@
 
 	var scene = new ScrollMagic.Scene({
 	    triggerElement: '.scene1',
+	    duration: 200,
+	    triggerHook: 'onLeave',
 	    duration: 300 /* How many pixels to scroll / animate */
 	})
 	.setTween(tween)
@@ -72,6 +74,8 @@
 
 	var scene2 = new ScrollMagic.Scene({
 	    triggerElement: '.scene2',
+	    duration: 200, 
+	    triggerHook: 'onLeave',
 	    duration: 300 /* How many pixels to scroll / animate */
 	})
 	.setTween(tween2)
@@ -82,6 +86,8 @@
 
 	var scene3 = new ScrollMagic.Scene({
 	    triggerElement: '.scene3',
+	    duration: 200,
+	    triggerHook: 'onLeave',
 	    duration: 300 /* How many pixels to scroll / animate */
 	})
 	.setTween(tween3)
@@ -92,6 +98,8 @@
 		
 	var scene4 = new ScrollMagic.Scene({
 	    triggerElement: '.scene4',
+	    duration: 200,
+	    triggerHook: 'onLeave',
 	    duration: 300 /* How many pixels to scroll / animate */
 	})
 	.setTween(tween4)
