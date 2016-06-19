@@ -116,6 +116,7 @@ var mapApp = mapApp || {};
 					});
 
 					marker.addListener('click', function() {
+						mapApp.removeInfoWindows();
 						infowindow.open(map, marker);
 					});
 
@@ -128,6 +129,11 @@ var mapApp = mapApp || {};
 			for (var i = 0; i < mapApp.currMarkers.length; i++) {
 			    mapApp.currMarkers[i].setMap(null);
 			  }
+		},
+
+		removeInfoWindows: function(){
+			var closeBtn = $('.gm-style-iw + div');
+			closeBtn.trigger('click');
 		},
 
 		mapRecenter: function(latlng,offsetx,offsety) {
