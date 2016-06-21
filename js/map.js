@@ -13,6 +13,7 @@ var mapApp = mapApp || {};
 	var geocoder;
 	var infowindow = new google.maps.InfoWindow();
 	var marker;  
+	var omdbKey = '9d7a5cd9';
 	var styleDark = [
 		{"featureType": "road.local", "stylers": [{ "visibility": "on" }, { "color": "#8a8280" }]},
 		{"featureType": "water", "stylers": [{ "color": "#405c80" }, { "saturation": -78 },{ "lightness": 4 }]},
@@ -32,6 +33,7 @@ var mapApp = mapApp || {};
 		currDecade: 0,
 		currFilms: [],
 		currMarkers: [],
+		contentString: 'afadfa',
 
 		mainLatLng: new google.maps.LatLng(40.730885, -73.997383),
 
@@ -81,10 +83,11 @@ var mapApp = mapApp || {};
 				  var lat = $.trim(latStr);
 				  var filmBoroughStr = $(this).find('Cell').eq(11).text();
 				  var filmBorough = $.trim(filmBoroughStr);	
+				  var idStrArr = $(this).find('Cell').eq(15).text().split('/');
+				  var idStr = idStrArr[idStrArr.length - 2];
+				  var id = $.trim(idStr);
 				  
-				  filmsArr.push({'title':title, 'year': filmYear, 'lng': lng, 'lat': lat, 'borough':filmBorough});
-				  // console.log('filmsArr: ', filmsArr);
-				  
+				  filmsArr.push({'title':title, 'year': filmYear, 'id': id, 'lng': lng, 'lat': lat, 'borough':filmBorough});
 				});
 			  },
 			  error : function(){console.log('error in parsing film info.');}	  
@@ -109,16 +112,61 @@ var mapApp = mapApp || {};
 
 				(function(marker, film){
 
-					var contentString = '<div><p class="infoItem">Title: '+film.title+'</p></div>';
+					// var contentString = '';
 
-	                var infowindow = new google.maps.InfoWindow({
-						content: contentString
-					});
+					$.ajax({
+						type: "GET",
+						url: "http://www.omdbapi.com/?r=xml",
+						data:{'i':film.id},
+						dataType: "xml",
+						success: function(xmlIMDB) {
+							console.log('success');
 
-					marker.addListener('click', function() {
-						mapApp.removeInfoWindows();
-						infowindow.open(map, marker);
-					});
+							// Get IMDB info
+							$(xmlIMDB).find('movie').each(function(){
+								var imdb_title = $(this).attr('title');
+								var imdb_filmYear = $(this).attr('year');
+								var imdb_director = $(this).attr('director');
+								var imdb_plot = $(this).attr('plot');
+								var imdb_rating = $(this).attr('imdbRating');
+								var imdb_votes = $(this).attr('imdbVotes');
+								var imdb_img = $(this).attr('poster');
+
+					 			var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><button class="cta">Directions</button></div>';
+					 			
+					 			var infowindow = new google.maps.InfoWindow({
+									content: contentString
+								});
+
+								console.log('marker: ', marker);
+
+								marker.addListener('click', function() {
+									mapApp.removeInfoWindows();
+									infowindow.open(map, marker);
+								});
+
+					 			// console.log('contentString: ', contentString);
+								// console.log('.overlayContent .title: ', imdb_title);
+								// console.log('.overlayContent .dir .value: ', imdb_director);
+								// console.log('.overlayContent .rating .value: ', imdb_rating);
+								// console.log('.overlayContent .votes .value: ', imdb_votes);
+								// console.log('.overlayContent .plot .value: ', imdb_plot);
+								// console.log('imdbImg: ', imdb_img);
+							});
+
+						}
+					}); // End Get imdb
+
+					// var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><button class="cta">Directions</button></div>';
+
+	    //             var infowindow = new google.maps.InfoWindow({
+					// 	content: mapApp.contentString
+					// });
+
+					// marker.addListener('click', function() {
+					// 	mapApp.removeInfoWindows();
+					// 	infowindow.open(map, marker);
+					// });
 
 				})(marker, films[film])
 			}
