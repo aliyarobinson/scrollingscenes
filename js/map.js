@@ -87,7 +87,8 @@ var mapApp = mapApp || {};
 					    // destination: indianapolis,
 					    destination: destLatLng,
 					    origin: mapApp.initialLocation,
-					    travelMode: google.maps.TravelMode.DRIVING
+					    // travelMode: google.maps.TravelMode.DRIVING
+					    travelMode: google.maps.TravelMode.TRANSIT
 					};
 
 					directionsService.route(request, function(response, status) {
@@ -189,7 +190,7 @@ var mapApp = mapApp || {};
 								var imdb_img = $(this).attr('poster');
 								var latlng = new google.maps.LatLng(film.lat, film.lng);
 
-					 			var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><button class="cta directions" data-lat="'+ film.lat +'" data-lng="'+ film.lng +'">Directions</button></div>';
+					 			var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><section class="direction-copy"></section><button class="cta directions" data-lat="'+ film.lat +'" data-lng="'+ film.lng +'">Directions</button></div>';
 					 			
 					 			var infowindow = new google.maps.InfoWindow({
 									content: contentString
