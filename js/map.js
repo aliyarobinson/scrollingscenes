@@ -12,6 +12,8 @@ var mapApp = mapApp || {};
 	var currentFilmArr = [];
 	var geocoder;
 	var infowindow = new google.maps.InfoWindow();
+	var directionsService = new google.maps.DirectionsService();
+	var initialLocation;
 	var marker;  
 	var omdbKey = '9d7a5cd9';
 	var styleDark = [
@@ -34,16 +36,16 @@ var mapApp = mapApp || {};
 		currFilms: [],
 		currMarkers: [],
 		contentString: 'afadfa',
+		initialLocation: {},
 
 		mainLatLng: new google.maps.LatLng(40.730885, -73.997383),
 
 		init: function(){
 			mapApp.getFilms();
 
-			// var latlng = new google.maps.LatLng(40.730885, -73.997383);
-		  
 			var mapOptions = {
 				zoom: 15,
+				scrollwheel: false,
 				center: mapApp.mainLatLng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
@@ -61,6 +63,63 @@ var mapApp = mapApp || {};
 
 				mapApp.plotFilms(mapApp.currFilms);
 			});
+
+			var directionsDisplay = new google.maps.DirectionsRenderer({
+			    map: map
+			});
+
+    		$(document).on('click', '.directions', function(){
+    			console.log('directions click');
+    			var destLat = $(this).attr('data-lat');
+    			var destLng = $(this).attr('data-lng');
+    			var destLatLng = new google.maps.LatLng(destLat, destLng);
+    			
+
+    			navigator.geolocation.getCurrentPosition(function(position) {
+    				console.log('position: ', position);
+			      	mapApp.initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+			      // map.setCenter(initialLocation);
+			     
+			     	console.log('destLatLng: ', destLatLng);
+	    			console.log('initialLocation: ', mapApp.initialLocation);
+
+	    			var request = {
+					    // destination: indianapolis,
+					    destination: destLatLng,
+					    origin: mapApp.initialLocation,
+					    travelMode: google.maps.TravelMode.DRIVING
+					};
+
+					directionsService.route(request, function(response, status) {
+					    if (status == google.maps.DirectionsStatus.OK) {
+					      // Display the route on the map.
+					      directionsDisplay.setDirections(response);
+					    } else {
+					    	console.log('bad directions: ', status);
+					    }
+					});
+			    });
+
+			 //    console.log('destLatLng: ', destLatLng);
+    // 			console.log('initialLocation: ', mapApp.initialLocation);
+
+    // 			var request = {
+				//     // destination: indianapolis,
+				//     destination: destLatLng,
+				//     origin: mapApp.initialLocation,
+				//     travelMode: google.maps.TravelMode.DRIVING
+				// };
+
+				// directionsService.route(request, function(response, status) {
+				//     if (status == google.maps.DirectionsStatus.OK) {
+				//       // Display the route on the map.
+				//       directionsDisplay.setDirections(response);
+				//     } else {
+				//     	console.log('bad directions: ', status);
+				//     }
+				// });
+			});
+
 
 		},
 
@@ -111,9 +170,6 @@ var mapApp = mapApp || {};
 				map.setCenter(mapApp.mainLatLng);
 
 				(function(marker, film){
-
-					// var contentString = '';
-
 					$.ajax({
 						type: "GET",
 						url: "http://www.omdbapi.com/?r=xml",
@@ -133,7 +189,7 @@ var mapApp = mapApp || {};
 								var imdb_img = $(this).attr('poster');
 								var latlng = new google.maps.LatLng(film.lat, film.lng);
 
-					 			var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><button class="cta">Directions</button></div>';
+					 			var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><button class="cta directions" data-lat="'+ film.lat +'" data-lng="'+ film.lng +'">Directions</button></div>';
 					 			
 					 			var infowindow = new google.maps.InfoWindow({
 									content: contentString
@@ -147,29 +203,10 @@ var mapApp = mapApp || {};
 									map.setCenter(mapApp.mapRecenter(latlng, 500, 600));
 									console.log('marker click film: ', film);
 								});
-
-					 			// console.log('contentString: ', contentString);
-								// console.log('.overlayContent .title: ', imdb_title);
-								// console.log('.overlayContent .dir .value: ', imdb_director);
-								// console.log('.overlayContent .rating .value: ', imdb_rating);
-								// console.log('.overlayContent .votes .value: ', imdb_votes);
-								// console.log('.overlayContent .plot .value: ', imdb_plot);
-								// console.log('imdbImg: ', imdb_img);
 							});
 
 						}
 					}); // End Get imdb
-
-					// var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><button class="cta">Directions</button></div>';
-
-	    //             var infowindow = new google.maps.InfoWindow({
-					// 	content: mapApp.contentString
-					// });
-
-					// marker.addListener('click', function() {
-					// 	mapApp.removeInfoWindows();
-					// 	infowindow.open(map, marker);
-					// });
 
 				})(marker, films[film])
 			}
