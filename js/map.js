@@ -131,6 +131,7 @@ var mapApp = mapApp || {};
 								var imdb_rating = $(this).attr('imdbRating');
 								var imdb_votes = $(this).attr('imdbVotes');
 								var imdb_img = $(this).attr('poster');
+								var latlng = new google.maps.LatLng(film.lat, film.lng);
 
 					 			var contentString = '<div class="film-info"><header class="film-info_header"><h3 class="film-title">Title: '+film.title+'</h3></header><section class="image-block"><img src="'+ imdb_img +'" /></section><button class="cta">Directions</button></div>';
 					 			
@@ -143,6 +144,8 @@ var mapApp = mapApp || {};
 								marker.addListener('click', function() {
 									mapApp.removeInfoWindows();
 									infowindow.open(map, marker);
+									map.setCenter(mapApp.mapRecenter(latlng, 500, 600));
+									console.log('marker click film: ', film);
 								});
 
 					 			// console.log('contentString: ', contentString);
