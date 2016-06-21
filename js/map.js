@@ -59,7 +59,6 @@ var mapApp = mapApp || {};
 					var filmYear = n.year.split('')[2];
 				  	return ( filmYear === mapApp.currDecade );
 				});
-				console.log('currFilms: ', mapApp.currFilms);
 
 				mapApp.plotFilms(mapApp.currFilms);
 			});
@@ -69,22 +68,15 @@ var mapApp = mapApp || {};
 			});
 
     		$(document).on('click', '.directions', function(){
-    			console.log('directions click');
     			var destLat = $(this).attr('data-lat');
     			var destLng = $(this).attr('data-lng');
     			var destLatLng = new google.maps.LatLng(destLat, destLng);
-    			
 
     			navigator.geolocation.getCurrentPosition(function(position) {
-    				console.log('position: ', position);
 			      	mapApp.initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-			      // map.setCenter(initialLocation);
-			     
-			     	console.log('destLatLng: ', destLatLng);
-	    			console.log('initialLocation: ', mapApp.initialLocation);
+			      	// map.setCenter(initialLocation);
 
 	    			var request = {
-					    // destination: indianapolis,
 					    destination: destLatLng,
 					    origin: mapApp.initialLocation,
 					    // travelMode: google.maps.TravelMode.DRIVING
@@ -93,35 +85,13 @@ var mapApp = mapApp || {};
 
 					directionsService.route(request, function(response, status) {
 					    if (status == google.maps.DirectionsStatus.OK) {
-					      // Display the route on the map.
 					      directionsDisplay.setDirections(response);
 					    } else {
 					    	console.log('bad directions: ', status);
 					    }
 					});
 			    });
-
-			 //    console.log('destLatLng: ', destLatLng);
-    // 			console.log('initialLocation: ', mapApp.initialLocation);
-
-    // 			var request = {
-				//     // destination: indianapolis,
-				//     destination: destLatLng,
-				//     origin: mapApp.initialLocation,
-				//     travelMode: google.maps.TravelMode.DRIVING
-				// };
-
-				// directionsService.route(request, function(response, status) {
-				//     if (status == google.maps.DirectionsStatus.OK) {
-				//       // Display the route on the map.
-				//       directionsDisplay.setDirections(response);
-				//     } else {
-				//     	console.log('bad directions: ', status);
-				//     }
-				// });
 			});
-
-
 		},
 
 		getFilms: function(){
@@ -196,13 +166,10 @@ var mapApp = mapApp || {};
 									content: contentString
 								});
 
-								console.log('marker: ', marker);
-
 								marker.addListener('click', function() {
 									mapApp.removeInfoWindows();
 									infowindow.open(map, marker);
 									map.setCenter(mapApp.mapRecenter(latlng, 500, 600));
-									console.log('marker click film: ', film);
 								});
 							});
 
