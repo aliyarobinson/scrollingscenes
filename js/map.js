@@ -150,7 +150,7 @@ var mapApp = mapApp || {};
 				(function(marker, film){
 					$.ajax({
 						type: "GET",
-						url: "http://www.omdbapi.com/?r=xml",
+						url: "https://www.omdbapi.com/?r=xml",
 						data:{'i':film.id},
 						dataType: "xml",
 						success: function(xmlIMDB) {
