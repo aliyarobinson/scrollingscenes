@@ -72,9 +72,16 @@ var mapApp = mapApp || {};
     			var destLng = $(this).attr('data-lng');
     			var destLatLng = new google.maps.LatLng(destLat, destLng);
 
+				console.log('destLat: ', destLat);
+				console.log('destLng: ', destLng);
+				console.log('destLatLng: ', destLatLng);
+
+
     			navigator.geolocation.getCurrentPosition(function(position) {
 			      	mapApp.initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 			      	// map.setCenter(initialLocation);
+
+					console.log('mapApp.initialLocation: ', mapApp.initialLocation);
 
 	    			var request = {
 					    destination: destLatLng,
@@ -206,6 +213,8 @@ var mapApp = mapApp || {};
 			)));
 		}
 	} // end mapApp
+
+	return mapApp;
 
 })(jQuery);
 
